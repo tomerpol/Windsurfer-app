@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+    <iq:application
+        entry="WindsurfApp"
+        id="79505864180b475088f0b58976aed0ed"
+        launcherIcon="@Drawables.LauncherIcon"
+        minSdkVersion="6.0.0"
+        name="@Strings.AppName"
+        type="watch-app">
+        <iq:products>
+            <iq:product id="fr57042mm"/>
+            <iq:product id="fr57047mm"/>
+        </iq:products>
+        <iq:permissions/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+    </iq:application>
+</iq:manifest>
