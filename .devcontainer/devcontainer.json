@@ -1,0 +1,16 @@
+{
+  "name": "Windsurfer Garmin Cloud",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Garmin Simulator",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postCreateCommand": "bash scripts/setup-cloud-dev.sh",
+  "postStartCommand": "bash scripts/start-desktop.sh"
+}
