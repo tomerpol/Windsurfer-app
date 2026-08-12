@@ -1,0 +1,22 @@
+name: Garmin build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        target: [fr57042mm, fr57047mm]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: ./scripts/build.sh ${{ matrix.target }}
+      - name: Upload PRG
+        uses: actions/upload-artifact@v4
+        with:
+          name: windsurf-${{ matrix.target }}
+          path: bin/windsurf-${{ matrix.target }}.prg
