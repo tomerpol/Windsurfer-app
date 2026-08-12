@@ -7,7 +7,7 @@
   "portsAttributes": {
     "6080": {
       "label": "Garmin Simulator",
-      "onAutoForward": "notify",
+      "onAutoForward": "openBrowser",
       "visibility": "private"
     }
   },
