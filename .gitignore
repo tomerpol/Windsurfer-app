@@ -1,6 +1,10 @@
 bin/
+connectiq-sdk*/
+.garmin/
 *.prg
 *.iq
 *.pem
 *.der
+*.key
+*.p12
 .DS_Store

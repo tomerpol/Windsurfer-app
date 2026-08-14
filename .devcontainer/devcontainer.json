@@ -11,6 +11,6 @@
       "visibility": "private"
     }
   },
-  "postCreateCommand": "bash scripts/setup-cloud-dev.sh",
-  "postStartCommand": "bash scripts/start-desktop.sh"
+  "postCreateCommand": "./scripts/setup-cloud-dev.sh",
+  "postStartCommand": "./scripts/setup-cloud-dev.sh"
 }
